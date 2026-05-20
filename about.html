@@ -1,183 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media-queries.css">
-  <!-- <link rel="stylesheet" href="media-queries_desk_one.css"> -->
-  <link rel="icon" type="image/x-icon" href="img/icon.ico">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
-  <title>Berkay Arabacı</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>About Berkay Arabacı | Back-End Web Developer</title>
+  <meta
+    name="description"
+    content="Learn about Berkay Arabacı, a Back-End Web Developer focused on APIs, web applications, databases, backend systems, and data automation."
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Berkay Arabacı" />
+  <meta name="theme-color" content="#111827" />
+
+  <link rel="canonical" href="https://berkayarabaci.github.io/web/about.html" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="About Berkay Arabacı | Back-End Web Developer" />
+  <meta
+    property="og:description"
+    content="Back-End Web Developer focused on APIs, databases, backend systems, and automation workflows."
+  />
+  <meta property="og:url" content="https://berkayarabaci.github.io/web/about.html" />
+  <meta property="og:image" content="https://berkayarabaci.github.io/web/img/berkayarabaci.webp" />
+  <meta property="og:site_name" content="Berkay Arabacı Portfolio" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About Berkay Arabacı | Back-End Web Developer" />
+  <meta
+    name="twitter:description"
+    content="Back-End Web Developer focused on APIs, databases, backend systems, and automation workflows."
+  />
+  <meta name="twitter:image" content="https://berkayarabaci.github.io/web/img/berkayarabaci.webp" />
+
+  <link rel="icon" type="image/x-icon" href="img/icon.ico" />
+  <link rel="apple-touch-icon" href="img/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
 </head>
+<body data-page="about">
+  <div class="page-bg"></div>
 
-<body>
-  <!--CONTAINER START-->
-  <div class="container">
-    <!--CARD START-->
-    <div class="card">
-      <!--HEADER START-->
-      <div class="header">
-        <!--LOGO START-->
-        <div class="logo-container">
-          <div class="logo-content">
-            <!-- <a href="index.html" aria-label="Berkay Arabacı"> -->
-            <img id="logo" src="img/logo.png" alt="Berkay Arabacı">
-            <!-- </a> -->
-            <div class="myName">
-              <p id="myName">Berkay Arabacı</p>
-            </div>
-            <div class="myImage">
-              <div class="me-content"><img class="me" src="img/me.png" alt="Berkay Arabacı"></div>
-            </div>
-          </div>
+  <div class="site-shell">
+    <header class="site-header glass">
+      <a href="index.html" class="brand" aria-label="Go to homepage">
+        <img class="brand-logo" src="img/logo.png" alt="Berkay Arabacı logo" />
+        <div class="brand-text">
+          <strong>Berkay Arabacı</strong>
+          <span>Back-End Web Developer</span>
         </div>
-        <!--LOGO END-->
-        <!--NAV START-->
-        <div class="nav-container">
-          <div class="button-container">
-            <button class="button"><a class="nav-item" href="index.html">Home</a></button>
-            <button class="button"><a class="nav-item" href="about.html">About Me</a></button>
-            <button class="button"><a class="nav_item" href="javascript:void(0)">Portfolio</a><div class="btn-container">
-              <p id="btnSelf">Coming Soon!</p>
-            </div></button>
-            <button class="button"><a class="nav-item" target="_blank"
-                href="https://docs.google.com/document/d/1ZdMDEaYX3c1JiSi9sQguzXr14roa68gwnXWbfpZU2Zo/edit?usp=sharing">My
-                CV</a></button>
-          </div>
-          <!--NAV END-->
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <iconify-icon icon="mdi:menu" width="28" height="28"></iconify-icon>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="portfolio.html">Skills</a>
+        <a
+          class="nav-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://docs.google.com/document/d/1ZdMDEaYX3c1JiSi9sQguzXr14roa68gwnXWbfpZU2Zo/edit?usp=sharing"
+        >
+          CV
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section reveal">
+        <div class="section-heading">
+          <p class="section-kicker">About Me</p>
+          <h1>Building backend systems, APIs, and data-driven web solutions</h1>
         </div>
-        <!--HEADER END-->
-      </div>
-      <!--HOME START-->
-      <div class="scroll-snap-card">
-        <section class="home">
-          <!-- <div class="home-img"></div> -->
-          <div class="home-content">
-            <!-- <h1 id="hi" class="masterText">Hi, It's <span>Berkay</span></h1> -->
-            <h3 class="aboutH3">About Me</h3>
-            <p class="masterText aboutP">
-              <!-- Looking to streamline your daily office tasks? You're in the right place! I’m
-              an Expert
-              VBA Developer with over two years of hands-on experience in creating powerful automations for Excel,
-              Outlook, and Word. Whether it's automating your data import/export processes, developing custom macros, or
-              simplifying workflows, I’ve got you covered. -->
-              <br>I specialize in:
-              <br><br><i class="bi bi-chevron-double-right"></i> Automating repetitive tasks, freeing up your time for
-              the
-              work that really matters.
-              <br><br><i class="bi bi-chevron-double-right"></i> Integrating data from TSQL and MySQL databases directly
-              into Excel for easy access and
-              reporting.
-              <br><br><i class="bi bi-chevron-double-right"></i> Developing PowerBI and PowerQuery solutions for better
-              data visualization.
-              <br><br>Certified in VBA, Excel Macros, and Automation, I bring deep knowledge and creativity to every
-              project. Need a custom solution? Let me design, implement, and maintain it for you—plus, I offer
-              post-project support to ensure everything runs smoothly.
-              <br><br>My clients love how I make their work easier and more efficient. Want to see how I can help your
-              business? Reach out now—let’s talk about how I can transform your day-to-day processes into something far
-              more manageable and productive!
-              <br><br>Technologies i use:
+
+        <div class="about-layout about-layout-full">
+          <div class="about-copy glass">
+            <p>
+              I am a Back-End Web Developer who focuses on the logic, structure, and systems behind modern web applications.
+              I build backend solutions, API integrations, and database-driven applications that are practical, reliable,
+              and easy to maintain.
             </p>
-            <div class="aboutCardContainer">
-              <div class="aboutCard">
-                <div class="aboutInnerCard">
-                  <p class="aboutText">VBA | Excel</p>
-                  <div class="imgCover">
-                    <img class="aboutImage" src="img/excel.png" alt="PowerBI">
-                  </div>
-                </div>
-              </div>
-              <div class="aboutCard">
-                <div class="aboutInnerCard">
-                  <p class="aboutText">MSSQL</p>
-                  <div class="imgCover">
-                    <img class="aboutImage" src="img/mssql.png" alt="PowerBI">
-                  </div>
-                </div>
-              </div>
-              <div class="aboutCard">
-                <div class="aboutInnerCard">
-                  <p class="aboutText">MySQL</p>
-                  <div class="imgCover">
-                    <img class="aboutImage" src="img/mysql.png" alt="PowerBI">
-                  </div>
-                </div>
-              </div>
-              <div class="aboutCard">
-                <div class="aboutInnerCard">
-                  <p class="aboutText">Sharepoint</p>
-                  <div class="imgCover">
-                    <img class="aboutImage" src="img/sharepoint.png" alt="PowerBI">
-                  </div>
-                </div>
-              </div>
-              <div class="aboutCard">
-                <div class="aboutInnerCard">
-                  <p class="aboutText">PowerBI</p>
-                  <div class="imgCover">
-                    <img class="aboutImage" src="img/powerbi.png" alt="PowerBI">
-                  </div>
-                </div>
-              </div>
-            </div>
+
+            <p>
+              I enjoy working on projects that include web application architecture, authentication systems, admin panels,
+              REST APIs, and backend services built around real business needs. I like turning requirements into stable systems
+              that support daily workflows and make complex processes easier to handle.
+            </p>
+
+            <p>
+              Alongside backend web development, I also work with data automation and system integration.
+              I build solutions that connect databases, APIs, reporting tools, and office processes so data can move
+              more clearly and reliably between different parts of a workflow.
+            </p>
+
+            <p>
+              My projects often involve ASP.NET, .NET Core, PHP, Laravel, Python, C#, JavaScript, WordPress,
+              SQL and NoSQL databases, API development, and custom automation logic. I am especially interested in backend
+              structures that can grow over time, stay easy to maintain, and remain useful in the long run.
+            </p>
+
+            <p>
+              I use this website to share my work, technical interests, and the kinds of systems I enjoy building.
+            </p>
           </div>
-          <!--HOME END-->
-        </section>
-        <!--FOOTER START-->
-        <section class="footer">
-          <div class="footer-content">
-            <div class="icon-container">
-              <div class="button-container">
-                <button class="button">
-                  <a target="_blank" href="https://www.instagram.com/berkayy.ar/"><span id="mdi--github"
-                      class="button-icon"></span></i></a>
-                  <div class="btn-container">
-                    <p id="btnSelf">GitHub</p>
-                  </div>
-                </button>
-                <button class="button">
-                  <a target="_blank" href="https://www.instagram.com/berkayy.ar/"><span id="mdi--instagram"
-                      class="button-icon"></span></a>
-                  <div class="btn-container">
-                    <p id="btnSelf">Instagram</p>
-                  </div>
-                </button>
-                <button class="button">
-                  <a target="_blank" href="https://www.freelancer.com/u/BerkayyAr"><span id="simple-icons--freelancer"
-                      class="button-icon"></span></a>
-                  <div class="btn-container">
-                    <p id="btnSelf">Freelancer</p>
-                  </div>
-                </button>
+        </div>
+      </section>
 
-                <button class="button">
-                  <a target="_blank" href="https://www.instagram.com/berkayy.ar/"><span id="mdi--linkedin"
-                      class="button-icon"></span></a>
-                  <div class="btn-container">
-                    <p id="btnSelf">LinkedIn</p>
-                  </div>
-                </button>
+      <section class="section reveal">
+        <div class="section-heading">
+          <p class="section-kicker">Technologies</p>
+          <h3>Technologies I Use</h3>
+        </div>
 
-                <button class="button">
-                  <a target="_blank" href="https://www.instagram.com/berkayy.ar/"><span
-                      id="material-symbols--mail-outline" class="button-icon"></span></a>
-                  <div class="btn-container">
-                    <p id="btnSelf">berkay.ar@outlook.com</p>
-                  </div>
-                </button>
-              </div>
-            </div>
-        </section>
-        <!--FOOTER END-->
-        <!--CARD END-->
-      </div>
-    </div>
-    <!--CONTAINER END-->
+        <div class="tech-grid">
+          <div class="tech-card" aria-label="Python">
+            <iconify-icon icon="skill-icons:python-dark" width="34" height="34"></iconify-icon>
+            <span>Python</span>
+          </div>
+
+          <div class="tech-card" aria-label="Django">
+            <iconify-icon icon="skill-icons:django" width="34" height="34"></iconify-icon>
+            <span>Django</span>
+          </div>
+
+          <div class="tech-card" aria-label="Flask">
+            <iconify-icon icon="skill-icons:flask-dark" width="34" height="34"></iconify-icon>
+            <span>Flask</span>
+          </div>
+
+          <div class="tech-card" aria-label="FastAPI">
+            <iconify-icon icon="skill-icons:fastapi" width="34" height="34"></iconify-icon>
+            <span>FastAPI</span>
+          </div>
+
+          <div class="tech-card" aria-label="Pandas">
+            <iconify-icon icon="simple-icons:pandas" width="34" height="34"></iconify-icon>
+            <span>Pandas</span>
+          </div>
+
+          <div class="tech-card" aria-label="Selenium">
+            <iconify-icon icon="simple-icons:selenium" width="34" height="34"></iconify-icon>
+            <span>Selenium</span>
+          </div>
+
+          <div class="tech-card" aria-label="C Sharp">
+            <iconify-icon icon="skill-icons:cs" width="34" height="34"></iconify-icon>
+            <span>C#</span>
+          </div>
+
+          <div class="tech-card" aria-label=".NET Core">
+            <iconify-icon icon="skill-icons:dotnet" width="34" height="34"></iconify-icon>
+            <span>.NET Core</span>
+          </div>
+
+          <div class="tech-card" aria-label="ASP.NET">
+            <iconify-icon icon="skill-icons:cs" width="34" height="34"></iconify-icon>
+            <span>ASP.NET</span>
+          </div>
+
+          <div class="tech-card" aria-label="REST API">
+            <iconify-icon icon="mdi:api" width="34" height="34"></iconify-icon>
+            <span>REST API</span>
+          </div>
+
+          <div class="tech-card" aria-label="Git">
+            <iconify-icon icon="skill-icons:git" width="34" height="34"></iconify-icon>
+            <span>Git</span>
+          </div>
+
+          <div class="tech-card" aria-label="MSSQL">
+            <iconify-icon icon="devicon:microsoftsqlserver" width="34" height="34"></iconify-icon>
+            <span>MSSQL</span>
+          </div>
+
+          <div class="tech-card" aria-label="MySQL">
+            <iconify-icon icon="skill-icons:mysql-dark" width="34" height="34"></iconify-icon>
+            <span>MySQL</span>
+          </div>
+
+          <div class="tech-card" aria-label="MongoDB">
+            <iconify-icon icon="skill-icons:mongodb" width="34" height="34"></iconify-icon>
+            <span>MongoDB</span>
+          </div>
+
+          <div class="tech-card" aria-label="NoSQL">
+            <iconify-icon icon="carbon:data-base" width="34" height="34"></iconify-icon>
+            <span>NoSQL</span>
+          </div>
+
+          <div class="tech-card" aria-label="Unity">
+            <iconify-icon icon="skill-icons:unity-dark" width="34" height="34"></iconify-icon>
+            <span>Unity</span>
+          </div>
+
+          <div class="tech-card" aria-label="PHP">
+            <iconify-icon icon="skill-icons:php-dark" width="34" height="34"></iconify-icon>
+            <span>PHP</span>
+          </div>
+
+          <div class="tech-card" aria-label="Laravel">
+            <iconify-icon icon="skill-icons:laravel-dark" width="34" height="34"></iconify-icon>
+            <span>Laravel</span>
+          </div>
+
+          <div class="tech-card" aria-label="JavaScript">
+            <iconify-icon icon="skill-icons:javascript" width="34" height="34"></iconify-icon>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="tech-card" aria-label="WordPress">
+            <iconify-icon icon="skill-icons:wordpress" width="34" height="34"></iconify-icon>
+            <span>WordPress</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer glass reveal">
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/berkayarabaci" class="social-link" aria-label="GitHub">
+        <iconify-icon icon="mdi:github" width="24" height="24"></iconify-icon>
+      </a>
+
+      <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/berkayy.ar/" class="social-link" aria-label="Instagram">
+        <iconify-icon icon="mdi:instagram" width="24" height="24"></iconify-icon>
+      </a>
+
+      <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/berkayar" class="social-link" aria-label="LinkedIn">
+        <iconify-icon icon="mdi:linkedin" width="24" height="24"></iconify-icon>
+      </a>
+
+      <a href="mailto:berkay.ar@outlook.com" class="social-link" aria-label="Email">
+        <iconify-icon icon="material-symbols:mail-outline" width="24" height="24"></iconify-icon>
+      </a>
+    </footer>
   </div>
-</body>
 
+  <script src="script.js"></script>
+</body>
 </html>

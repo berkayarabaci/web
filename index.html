@@ -1,136 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="media-queries.css">
-  <link rel="icon" type="image/x-icon" href="img/icon.ico">
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
-  <title>Berkay Arabacı</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Berkay Arabacı | Back-End Web Developer</title>
+  <meta
+    name="description"
+    content="Berkay Arabacı is a Back-End Web Developer building web applications, REST APIs, database systems, and practical automation tools."
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Berkay Arabacı" />
+  <meta name="theme-color" content="#111827" />
+
+  <link rel="canonical" href="https://berkayarabaci.github.io/web/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Berkay Arabacı | Back-End Web Developer" />
+  <meta
+    property="og:description"
+    content="Back-End Web Developer building web applications, APIs, database systems, and automation tools."
+  />
+  <meta property="og:url" content="https://berkayarabaci.github.io/web/" />
+  <meta property="og:image" content="https://berkayarabaci.github.io/web/img/berkayarabaci.webp" />
+  <meta property="og:site_name" content="Berkay Arabacı Portfolio" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Berkay Arabacı | Back-End Web Developer" />
+  <meta
+    name="twitter:description"
+    content="Back-End Web Developer building web applications, APIs, database systems, and automation tools."
+  />
+  <meta name="twitter:image" content="https://berkayarabaci.github.io/web/img/berkayarabaci.webp" />
+
+  <link rel="icon" type="image/x-icon" href="img/icon.ico" />
+  <link rel="apple-touch-icon" href="img/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Berkay Arabacı",
+    "jobTitle": "Back-End Web Developer",
+    "url": "https://berkayarabaci.github.io/web/",
+    "image": "https://berkayarabaci.github.io/web/img/berkayarabaci.webp",
+    "email": "mailto:berkay.ar@outlook.com",
+    "sameAs": [
+      "https://github.com/berkayarabaci",
+      "https://linkedin.com/in/berkayar",
+      "https://instagram.com/berkayy.ar/"
+    ],
+    "knowsAbout": [
+      "Back-End Development",
+      "REST APIs",
+      "Database Systems",
+      "Python",
+      "ASP.NET",
+      ".NET Core",
+      "PHP",
+      "Laravel",
+      "Automation"
+    ]
+  }
+  </script>
 </head>
+<body data-page="home">
+  <div class="page-bg"></div>
 
-<body>
-  <!--CONTAINER START-->
-  <div class="container">
-    <!--CARD START-->
-    <div class="card">
-      <!--HEADER START-->
-      <div class="header">
-        <!--LOGO START-->
-        <div class="logo-container">
-          <div class="logo-content">
-            <img id="logo" src="img/logo.png" alt="Berkay Arabacı">
-            <div class="myName">
-              <p id="myName">Berkay Arabacı</p>
-            </div>
-            <div class="myImage">
-              <div class="me-content"><img class="me" src="img/me.png" alt="Berkay Arabacı"></div>
-            </div>
+  <div class="site-shell">
+    <header class="site-header glass">
+      <a href="index.html" class="brand" aria-label="Go to homepage">
+        <img class="brand-logo" src="img/logo.png" alt="Berkay Arabacı logo" />
+        <div class="brand-text">
+          <strong>Berkay Arabacı</strong>
+          <span>Back-End Web Developer</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <iconify-icon icon="mdi:menu" width="28" height="28"></iconify-icon>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="portfolio.html">Skills</a>
+        <a
+          class="nav-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://docs.google.com/document/d/1ZdMDEaYX3c1JiSi9sQguzXr14roa68gwnXWbfpZU2Zo/edit?usp=sharing"
+        >
+          CV
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero reveal">
+        <div class="hero-text">
+          <!-- <p class="eyebrow">Hello, I'm</p> -->
+          <h1>Hi, I’m <span>Berkay</span></h1>
+          <h2>I’m a <span id="typedText">Back-End Web Developer</span></h2>
+
+          <p class="hero-description">
+            I build backend systems for web applications, APIs, database-driven tools,
+            and automation workflows. My focus is on creating reliable, practical, and
+            easy-to-maintain solutions that support real business needs and make complex
+            processes easier to manage.
+          </p>
+
+          <div class="hero-actions">
+            <a href="about.html" class="btn btn-primary">About Me</a>
+            <a href="portfolio.html" class="btn btn-secondary">View Skills</a>
           </div>
         </div>
-        <!--LOGO END-->
-        <!--NAV START-->
-        <div class="nav-container">
-          <div class="button-container">
-            <button class="button"><a class="nav-item" href="index.html">Home</a></button>
-            <button class="button"><a class="nav-item" href="about.html">About Me</a></button>
-            <button class="button"><a class="nav_item" href="javascript:void(0)">Portfolio</a>
-              <div class="btn-container">
-                <p id="btnSelf">Coming Soon!</p>
-              </div>
-            </button>
-            <button class="button"><a class="nav-item" target="_blank"
-                href="https://docs.google.com/document/d/1ZdMDEaYX3c1JiSi9sQguzXr14roa68gwnXWbfpZU2Zo/edit?usp=sharing">My
-                CV</a></button>
-          </div>
-          <!--NAV END-->
+
+        <div class="hero-card reveal">
+          <img class="profile-image" src="img/berkayarabaci.webp" alt="Berkay Arabacı" />
         </div>
-        <!--HEADER END-->
-      </div>
-      <!--HOME START-->
-      <div class="scroll-snap-card">
-        <section class="home">
-          <div class="home-content">
-            <h1 id="hi" class="masterText">Hi, It's <span>Berkay</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3>
-            <p class="masterText, homeParagraph">&nbsp;Looking to streamline your daily office tasks? You're in the
-              right
-              place!
-              I’m an Expert
-              VBA Developer with over two years of hands-on experience in creating powerful automations for Excel,
-              Outlook, and Word. If you are looking for automating your data import/export processes, developing custom
-              macros, or
-              simplifying workflows, I’ve got you covered.</p>
-            <div class="indexProjectContainer">
-              <div class="projectCard">
-                <p class="title">Snowy New Year Project</p>
-                <div>
-                  <img src="img/project_one.png" alt="Get data from excel files.">
-                </div>
-                <p class="description">This is a small, festive Excel program created to celebrate the New Year.
-                  Clicking on the moon triggers a snowfall animation, adding a touch of holiday magic. Enjoy the
-                  festive
-                  spirit!</p>
-              </div>
-            </div>
-          </div>
-          <!--HOME END-->
-        </section>
-        <!--FOOTER START-->
-        <section class="footer">
-          <div class="footer-content">
-            <div class="icon-container">
-              <div class="button-container">
-                <button class="button">
-                  <a target="_blank" href="https://www.instagram.com/berkayy.ar/"><span id="mdi--github"
-                      class="button-icon"></span></i></a>
-                  <div class="btn-container">
-                    <p id="btnSelf">GitHub</p>
-                  </div>
-                </button>
-                <button class="button">
-                  <a target="_blank" href="https://www.instagram.com/berkayy.ar/"><span id="mdi--instagram"
-                      class="button-icon"></span></a>
-                  <div class="btn-container">
-                    <p id="btnSelf">Instagram</p>
-                  </div>
-                </button>
-                <button class="button">
-                  <a target="_blank" href="https://www.freelancer.com/u/BerkayyAr"><span id="simple-icons--freelancer"
-                      class="button-icon"></span></a>
-                  <div class="btn-container">
-                    <p id="btnSelf">Freelancer</p>
-                  </div>
-                </button>
+      </section>
 
-                <button class="button">
-                  <a target="_blank" href="https://www.linkedin.com/in/berkayar"><span id="mdi--linkedin"
-                      class="button-icon"></span></a>
-                  <div class="btn-container">
-                    <p id="btnSelf">LinkedIn</p>
-                  </div>
-                </button>
+      <section class="section reveal">
+        <div class="section-heading">
+          <p class="section-kicker">What I Do</p>
+          <h3>Backend skills I work with</h3>
+        </div>
 
-                <button class="button">
-                  <a target="_blank" href="https://www.instagram.com/berkayy.ar/"><span
-                      id="material-symbols--mail-outline" class="button-icon"></span></a>
-                  <div class="btn-container">
-                    <p id="btnSelf">berkay.ar@outlook.com</p>
-                  </div>
-                </button>
-              </div>
+        <div class="portfolio-grid">
+          <article class="portfolio-card interactive-card">
+            <div class="portfolio-card-top">
+              <span class="portfolio-badge">Backend</span>
+              <h3>Web Application Logic</h3>
             </div>
-        </section>
-        <!--FOOTER END-->
-        <!--CARD END-->
-      </div>
-    </div>
-    <!--CONTAINER END-->
+            <p class="portfolio-text">
+              I work on server-side structure, authentication flows, business logic,
+              and database-connected features for web applications.
+            </p>
+          </article>
+
+          <article class="portfolio-card interactive-card">
+            <div class="portfolio-card-top">
+              <span class="portfolio-badge">APIs</span>
+              <h3>API Development</h3>
+            </div>
+            <p class="portfolio-text">
+              I build REST APIs with clear request and response handling,
+              secure endpoint logic, and clean data exchange between systems.
+            </p>
+          </article>
+
+          <article class="portfolio-card interactive-card">
+            <div class="portfolio-card-top">
+              <span class="portfolio-badge">Automation</span>
+              <h3>Data Automation</h3>
+            </div>
+            <p class="portfolio-text">
+              I create practical automation workflows with Python, databases,
+              Excel-based processes, and integration logic.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer glass reveal">
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/berkayarabaci" class="social-link" aria-label="GitHub">
+        <iconify-icon icon="mdi:github" width="24" height="24"></iconify-icon>
+      </a>
+
+      <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/berkayy.ar/" class="social-link" aria-label="Instagram">
+        <iconify-icon icon="mdi:instagram" width="24" height="24"></iconify-icon>
+      </a>
+
+      <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/berkayar" class="social-link" aria-label="LinkedIn">
+        <iconify-icon icon="mdi:linkedin" width="24" height="24"></iconify-icon>
+      </a>
+
+      <a href="mailto:berkay.ar@outlook.com" class="social-link" aria-label="Email">
+        <iconify-icon icon="material-symbols:mail-outline" width="24" height="24"></iconify-icon>
+      </a>
+    </footer>
   </div>
-</body>
 
+  <script src="script.js"></script>
+</body>
 </html>
