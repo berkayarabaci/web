@@ -94,8 +94,115 @@ navLinks.forEach((link) => {
   if (
     (currentPage === "home" && href === "index.html") ||
     (currentPage === "about" && href === "about.html") ||
-    (currentPage === "portfolio" && href === "portfolio.html")
+    (currentPage === "portfolio" && href === "portfolio.html") ||
+    (currentPage === "schulte" && href === "schulte.html")
   ) {
     link.classList.add("active");
   }
 });
+
+// Schulte Table Game
+const schulteGrid = document.getElementById("schulteGrid");
+const schulteNext = document.getElementById("schulteNext");
+const schulteTime = document.getElementById("schulteTime");
+const schulteBest = document.getElementById("schulteBest");
+const schulteRestart = document.getElementById("schulteRestart");
+const schulteMessage = document.getElementById("schulteMessage");
+
+if (schulteGrid) {
+  let nextNumber = 1;
+  let startTime = null;
+  let timer = null;
+  const totalNumbers = 25;
+
+  const bestTime = localStorage.getItem("schulteBestTime");
+  if (bestTime) {
+    schulteBest.textContent = `${Number(bestTime).toFixed(2)}s`;
+  }
+
+  function shuffleNumbers() {
+    return Array.from({ length: totalNumbers }, (_, i) => i + 1)
+      .sort(() => Math.random() - 0.5);
+  }
+
+  function startTimer() {
+    startTime = Date.now();
+
+    timer = setInterval(() => {
+      const seconds = (Date.now() - startTime) / 1000;
+      schulteTime.textContent = `${seconds.toFixed(2)}s`;
+    }, 50);
+  }
+
+  function stopTimer() {
+    clearInterval(timer);
+    timer = null;
+  }
+
+  function finishGame() {
+    stopTimer();
+
+    const finalTime = (Date.now() - startTime) / 1000;
+    schulteTime.textContent = `${finalTime.toFixed(2)}s`;
+    schulteMessage.textContent = `Finished in ${finalTime.toFixed(2)} seconds. Great job!`;
+
+    const savedBest = localStorage.getItem("schulteBestTime");
+
+    if (!savedBest || finalTime < Number(savedBest)) {
+      localStorage.setItem("schulteBestTime", finalTime);
+      schulteBest.textContent = `${finalTime.toFixed(2)}s`;
+      schulteMessage.textContent = `New best time: ${finalTime.toFixed(2)} seconds!`;
+    }
+  }
+
+  function createSchulteTable() {
+    schulteGrid.innerHTML = "";
+    nextNumber = 1;
+    startTime = null;
+    stopTimer();
+
+    schulteNext.textContent = "1";
+    schulteTime.textContent = "0.00s";
+    schulteMessage.textContent = "Start by clicking number 1.";
+
+    const numbers = shuffleNumbers();
+
+    numbers.forEach((number) => {
+      const button = document.createElement("button");
+      button.className = "schulte-cell";
+      button.type = "button";
+      button.textContent = number;
+      button.setAttribute("aria-label", `Number ${number}`);
+
+      button.addEventListener("click", () => {
+        if (number !== nextNumber) {
+          schulteMessage.textContent = `Find number ${nextNumber}.`;
+          return;
+        }
+
+        if (!startTime) {
+          startTimer();
+        }
+
+        button.classList.add("done");
+        button.disabled = true;
+
+        nextNumber++;
+
+        if (nextNumber > totalNumbers) {
+          schulteNext.textContent = "Done";
+          finishGame();
+        } else {
+          schulteNext.textContent = nextNumber;
+          schulteMessage.textContent = `Good. Now find ${nextNumber}.`;
+        }
+      });
+
+      schulteGrid.appendChild(button);
+    });
+  }
+
+  schulteRestart.addEventListener("click", createSchulteTable);
+
+  createSchulteTable();
+}

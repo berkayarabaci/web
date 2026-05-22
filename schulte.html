@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Schulte Table | Berkay Arabacı</title>
+  <meta
+    name="description"
+    content="Play a Schulte table attention and focus mini game on Berkay Arabacı's portfolio website."
+  />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Berkay Arabacı" />
+  <meta name="theme-color" content="#111827" />
+
+  <link rel="canonical" href="https://berkayarabaci.github.io/web/schulte.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Schulte Table | Berkay Arabacı" />
+  <meta
+    property="og:description"
+    content="A simple Schulte table mini game for attention, focus, and visual scanning practice."
+  />
+  <meta property="og:url" content="https://berkayarabaci.github.io/web/schulte.html" />
+  <meta property="og:image" content="https://berkayarabaci.github.io/web/img/berkayarabaci.webp" />
+
+  <link rel="icon" type="image/x-icon" href="img/icon.ico" />
+  <link rel="apple-touch-icon" href="img/logo.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+</head>
+
+<body data-page="schulte">
+  <div class="page-bg"></div>
+
+  <div class="site-shell">
+    <header class="site-header glass">
+      <a href="index.html" class="brand" aria-label="Go to homepage">
+        <img class="brand-logo" src="img/logo.png" alt="Berkay Arabacı logo" />
+        <div class="brand-text">
+          <strong>Berkay Arabacı</strong>
+          <span>Back-End Web Developer</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+        <iconify-icon icon="mdi:menu" width="28" height="28"></iconify-icon>
+      </button>
+
+      <nav class="site-nav" id="siteNav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="portfolio.html">Skills</a>
+        <a class="nav-link" href="schulte.html">Schulte Table</a>
+        <a
+          class="nav-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://docs.google.com/document/d/1ZdMDEaYX3c1JiSi9sQguzXr14roa68gwnXWbfpZU2Zo/edit?usp=sharing"
+        >
+          CV
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section reveal schulte-hero">
+        <div class="section-heading">
+          <p class="section-kicker">Mini Game</p>
+          <h1>Schulte Table</h1>
+        </div>
+
+        <p class="portfolio-intro">
+          Schulte tables are useful because they train visual scanning, concentration, peripheral vision, and reaction speed. Practicing with this table can help you notice information faster and stay focused while reading or working.
+        </p>
+
+        <p class="portfolio-intro">
+          Click the numbers from 1 to 25 as quickly as possible.
+        </p>
+      </section>
+
+      <section class="section reveal">
+        <div class="schulte-game glass">
+          <div class="schulte-info">
+            <div>
+              <span class="schulte-label">Next</span>
+              <strong id="schulteNext">1</strong>
+            </div>
+
+            <div>
+              <span class="schulte-label">Time</span>
+              <strong id="schulteTime">0.00s</strong>
+            </div>
+
+            <div>
+              <span class="schulte-label">Best</span>
+              <strong id="schulteBest">-</strong>
+            </div>
+          </div>
+
+          <div id="schulteGrid" class="schulte-grid" aria-label="Schulte table game"></div>
+
+          <div class="schulte-actions">
+            <button class="btn btn-primary" id="schulteRestart">Restart</button>
+            <a href="index.html" class="btn btn-secondary">Back Home</a>
+          </div>
+
+          <p id="schulteMessage" class="schulte-message">
+            Start by clicking number 1.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer glass reveal">
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/berkayarabaci" class="social-link" aria-label="GitHub">
+        <iconify-icon icon="mdi:github" width="24" height="24"></iconify-icon>
+      </a>
+
+      <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/berkayy.ar/" class="social-link" aria-label="Instagram">
+        <iconify-icon icon="mdi:instagram" width="24" height="24"></iconify-icon>
+      </a>
+
+      <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/berkayar" class="social-link" aria-label="LinkedIn">
+        <iconify-icon icon="mdi:linkedin" width="24" height="24"></iconify-icon>
+      </a>
+
+      <a href="mailto:berkay.ar@outlook.com" class="social-link" aria-label="Email">
+        <iconify-icon icon="material-symbols:mail-outline" width="24" height="24"></iconify-icon>
+      </a>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
