@@ -92,10 +92,10 @@ navLinks.forEach((link) => {
   const href = link.getAttribute("href");
 
   if (
-    (currentPage === "home" && href === "index.html") ||
-    (currentPage === "about" && href === "about.html") ||
-    (currentPage === "portfolio" && href === "portfolio.html") ||
-    (currentPage === "schulte" && href === "schulte.html")
+    (currentPage === "home" && href === "/") ||
+    (currentPage === "about" && href === "/about/") ||
+    (currentPage === "portfolio" && href === "/portfolio/") ||
+    (currentPage === "schulte" && href === "/schulte/")
   ) {
     link.classList.add("active");
   }
@@ -109,7 +109,7 @@ const schulteBest = document.getElementById("schulteBest");
 const schulteRestart = document.getElementById("schulteRestart");
 const schulteMessage = document.getElementById("schulteMessage");
 
-if (schulteGrid) {
+if (schulteGrid && schulteNext && schulteTime && schulteBest && schulteMessage) {
   let nextNumber = 1;
   let startTime = null;
   let timer = null;
@@ -121,8 +121,14 @@ if (schulteGrid) {
   }
 
   function shuffleNumbers() {
-    return Array.from({ length: totalNumbers }, (_, i) => i + 1)
-      .sort(() => Math.random() - 0.5);
+    const numbers = Array.from({ length: totalNumbers }, (_, i) => i + 1);
+
+    for (let i = numbers.length - 1; i > 0; i--) {
+      const randomIndex = Math.floor(Math.random() * (i + 1));
+      [numbers[i], numbers[randomIndex]] = [numbers[randomIndex], numbers[i]];
+    }
+
+    return numbers;
   }
 
   function startTimer() {
@@ -135,8 +141,10 @@ if (schulteGrid) {
   }
 
   function stopTimer() {
-    clearInterval(timer);
-    timer = null;
+    if (timer) {
+      clearInterval(timer);
+      timer = null;
+    }
   }
 
   function finishGame() {
@@ -202,7 +210,9 @@ if (schulteGrid) {
     });
   }
 
-  schulteRestart.addEventListener("click", createSchulteTable);
+  if (schulteRestart) {
+    schulteRestart.addEventListener("click", createSchulteTable);
+  }
 
   createSchulteTable();
 }
